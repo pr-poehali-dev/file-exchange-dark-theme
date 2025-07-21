@@ -18,7 +18,7 @@ const Index = () => {
             <Icon name="Download" size={32} className="text-[#7aa2f7]" />
           </div>
           <h1 className="text-2xl font-bold text-white mb-2">FILE SHARING</h1>
-          <p className="text-gray-400">Безопасное скачивание файлов</p>
+          <p className="text-gray-400">Secure file downloads</p>
         </div>
 
         {/* Download Card */}
@@ -33,16 +33,16 @@ const Index = () => {
           {/* File Info */}
           <div className="text-center mb-6">
             <h2 className="text-xl font-semibold text-white mb-2">Yandex.exe</h2>
-            <p className="text-gray-400 text-sm mb-4">Размер файла: 1.3 МБ</p>
+            <p className="text-gray-400 text-sm mb-4">File size: 1.3 MB</p>
             
             {/* Antivirus Status */}
             <div className="flex items-center justify-center gap-2 mb-4">
               <Icon name="Shield" size={20} className="text-[#9ece6a]" />
-              <span className="text-[#9ece6a] font-medium">0/67 детектов</span>
+              <span className="text-[#9ece6a] font-medium">0/67 detections</span>
             </div>
             
             <Badge variant="secondary" className="bg-[#9ece6a]/10 text-[#9ece6a] border-[#9ece6a]/20">
-              Файл безопасен
+              File is safe
             </Badge>
           </div>
 
@@ -53,18 +53,18 @@ const Index = () => {
             size="lg"
           >
             <Icon name="Download" size={20} className="mr-2" />
-            Скачать файл
+            Download File
           </Button>
 
           {/* Additional Info */}
           <div className="mt-6 space-y-2">
             <div className="flex items-center justify-between text-sm">
-              <span className="text-gray-400">Тип файла:</span>
-              <span className="text-white">Исполняемый файл</span>
+              <span className="text-gray-400">File type:</span>
+              <span className="text-white">Executable</span>
             </div>
             <div className="flex items-center justify-between text-sm">
-              <span className="text-gray-400">Последняя проверка:</span>
-              <span className="text-white">Сегодня</span>
+              <span className="text-gray-400">Last scan:</span>
+              <span className="text-white">Today</span>
             </div>
           </div>
         </Card>
@@ -72,16 +72,16 @@ const Index = () => {
         {/* Footer */}
         <div className="text-center mt-6">
           <p className="text-gray-500 text-sm">
-            Файлы проверяются 67 антивирусными системами
+            Files are scanned by 67 antivirus engines
           </p>
           <div className="flex items-center justify-center gap-4 mt-4">
             <div className="flex items-center gap-2">
               <Icon name="Lock" size={16} className="text-gray-500" />
-              <span className="text-xs text-gray-500">SSL защита</span>
+              <span className="text-xs text-gray-500">SSL Protected</span>
             </div>
             <div className="flex items-center gap-2">
               <Icon name="Zap" size={16} className="text-gray-500" />
-              <span className="text-xs text-gray-500">Быстрая загрузка</span>
+              <span className="text-xs text-gray-500">Fast Download</span>
             </div>
           </div>
         </div>

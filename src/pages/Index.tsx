@@ -10,12 +10,22 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1a1b26] flex items-center justify-center p-4">
-      <div className="w-full max-w-md">
+    <div className="min-h-screen bg-[#1a1b26] flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Background Light Effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#7aa2f7]/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-48 h-48 bg-[#9ece6a]/5 rounded-full blur-3xl animate-pulse delay-700"></div>
+        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-[#f7768e]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      </div>
+      
+      <div className="w-full max-w-md relative z-10">
 
 
         {/* Download Card */}
-        <Card className="bg-[#24283b] border-[#414868] p-6 animate-fade-in">
+        <Card className="relative bg-[#24283b]/70 backdrop-blur-xl border border-[#414868]/50 p-6 animate-fade-in shadow-2xl">
+          {/* Glass effect overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-lg pointer-events-none"></div>
+          <div className="relative z-10">
           {/* File Icon */}
           <div className="flex items-center justify-center mb-6">
             <div className="w-16 h-16 bg-[#1a1b26] rounded-lg flex items-center justify-center">
@@ -43,7 +53,7 @@ const Index = () => {
           {/* Download Button */}
           <Button
             onClick={handleDownload}
-            className="w-full bg-[#7aa2f7] hover:bg-[#7aa2f7]/90 text-white font-medium py-3 h-auto transition-all duration-200 hover:scale-105"
+            className="w-full bg-[#7aa2f7] hover:bg-[#7aa2f7]/90 text-white font-medium py-3 h-auto transition-all duration-200"
             size="lg"
           >
             <Icon name="Download" size={20} className="mr-2" />
@@ -60,6 +70,11 @@ const Index = () => {
               <span className="text-gray-400">Last scan:</span>
               <span className="text-white">Today</span>
             </div>
+            <div className="flex items-center justify-between text-sm">
+              <span className="text-gray-400">Uploaded:</span>
+              <span className="text-white">3 days ago</span>
+            </div>
+          </div>
           </div>
         </Card>
 
